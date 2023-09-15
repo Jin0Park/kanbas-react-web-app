@@ -1,0 +1,271 @@
+<body>
+    <table border="0" width="100%">
+    <tbody>
+    <tr style="vertical-align:top">
+        <td>
+            <ul>
+                <li><a href="kanbas/Account.html">Account</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="kanbas/Courses.html">Courses</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Inbox</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Studio</a></li>
+                <li><a href="#">Commons</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </td>
+        <td>
+            <td>
+                <ul>
+                    <li><a href="kanbas/home.html">Home</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li><a href="kanbas/Assignments.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="kanbas/Grades.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Videos</a></li>
+                    <li><a href="#">Discussions</a></li>
+                    <li><a href="#">Announcements</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Files</a></li>
+                    <li><a href="#">Rubrics</a></li>
+                    <li><a href="#">Outcomes</a></li>
+                    <li><a href="#">Collaborations</a></li>
+                    <li><a href="#">Syllabus</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </td>
+        </td>
+        <td>
+            <select id="gradebook">
+                <option selected value="gradebook">
+                    Gradebook</option>
+                </select>
+            <button type="button">import</button>
+            <select id="export">
+            <option selected value="export">
+                Export</option>
+            </select>
+            <button type="button">Configure</button>
+
+            <h4>Student Names</h4>
+            <input type="student search"
+            placeholder="Search Students"
+            id="student-search"/><br/>
+
+            <h4>Assignment Names</h4>
+            <input type="assignment search"
+            placeholder="Search Assignments"
+            id="assignment-search"/><br/><br/>
+
+            <button type="button">Apply Filters</button><br/><br/>
+            
+            <table border="1" width="100%" style="text-align:center">
+                <thead>
+                <tr>
+                    <th><b>Student Name</b></th>
+                    <th><b>A1 SETUP</br>Out of 100</b></th>
+                    <th><b>A2 HTML</br>Out of 100</b></th>
+                    <th><b>A3 CSS</br>Out of 100</b></th>
+                    <th><b>A4 BOOTSTRAP</br>Out of 100</b></th>
+                    <th><b>A5 JAVASCRIPT</br>Out of 100</b></th>
+                    <th><b>A6 REACT</br>Out of 100</b></th>
+                    <th><b>A7 REDUX</br>Out of 100</b></th>
+                    <th><b>A8 NODE</br>Out of 100</b></th>
+                    <th><b>A9 MONGO</br>Out of 100</b></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="text-align:left">Alice Wonderland</td>
+                    <td>98</td>
+                    <td>89</td>
+                    <td>87</td>
+                    <td>90</td>
+                    <td>89</td>
+                    <td>94</td>
+                    <td>88</td>
+                    <td>87</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left">Princes Leia</td>
+                    <td>98</td>
+                    <td>80</td>
+                    <td>87</td>
+                    <td>86</td>
+                    <td>100</td>
+                    <td>94</td>
+                    <td>
+                        <input type="score"
+                        placeholder="85" maxlength="3" size="4" style="text-align: center;"
+                        id="princes-leia-a7-score"/>
+                    </td>
+                    <td>84</td>
+                    <td>92</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left">Luke Skywalker</td>
+                    <td>
+                        <input type="score"
+                        placeholder="99" maxlength="3" size="4" style="text-align: center;"
+                        id="luke-skywalker-a1-score"/>
+                    </td>
+                    <td>88</td>
+                    <td>97</td>
+                    <td>82</td>
+                    <td>96</td>
+                    <td>93</td>
+                    <td>95</td>
+                    <td>100</td>
+                    <td>93</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left">Han Solo</td>
+                    <td>83</td>
+                    <td>99</td>
+                    <td>94</td>
+                    <td>98</td>
+                    <td>86</td>
+                    <td>85</td>
+                    <td>
+                        <input type="score"
+                        placeholder="86" maxlength="3" size="4" style="text-align: center;"
+                        id="han-solo-a7-score"/>
+                    </td>
+                    <td>80</td>
+                    <td>84</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left">Lando Calresian</td>
+                    <td>83</td>
+                    <td>
+                        <input type="score"
+                        placeholder="92" maxlength="3" size="4" style="text-align: center;"
+                        id="lando-calresian-a2-score"/>
+                    </td>
+                    <td>80</td>
+                    <td>80</td>
+                    <td>92</td>
+                    <td>92</td>
+                    <td>94</td>
+                    <td>87</td>
+                    <td>95</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left">Boba Fet</td>
+                    <td>85</td>
+                    <td>89</td>
+                    <td>94</td>
+                    <td>83</td>
+                    <td>83</td>
+                    <td>84</td>
+                    <td>91</td>
+                    <td>87</td>
+                    <td>96</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left">Darth Vader</td>
+                    <td>81</td>
+                    <td>81</td>
+                    <td>
+                        <input type="score"
+                        placeholder="96" maxlength="3" size="4" style="text-align: center;"
+                        id="darth-vader-a3-score"/>
+                    </td>                    
+                    <td>80</td>
+                    <td>89</td>
+                    <td>88</td>
+                    <td>82</td>
+                    <td>80</td>
+                    <td>82</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left">Obi-Wan Kenobi</td>
+                    <td>
+                        <input type="score"
+                        placeholder="85" maxlength="3" size="4" style="text-align: center;"
+                        id="obi-wan-kenobi-a1-score"/>
+                    </td>                          
+                    <td>99</td>
+                    <td>87</td>
+                    <td>82</td>
+                    <td>88</td>
+                    <td>83</td>
+                    <td>88</td>
+                    <td>92</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left">R2-D2</td>
+                    <td>81</td>                       
+                    <td>
+                        <input type="score"
+                        placeholder="92" maxlength="3" size="4" style="text-align: center;"
+                        id="r1-d2-a2-score"/>
+                    </td>
+                    <td>
+                        <input type="score"
+                        placeholder="82" maxlength="3" size="4" style="text-align: center;"
+                        id="r1-d2-a3-score"/>
+                    </td>  
+                    <td>86</td>
+                    <td>83</td>
+                    <td>
+                        <input type="score"
+                        placeholder="84" maxlength="3" size="4" style="text-align: center;"
+                        id="r1-d2-a6-score"/>
+                    </td>  
+                    <td>98</td>
+                    <td>85</td>
+                    <td>96</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left">C-3PO</td>
+                    <td>94</td>
+                    <td>98</td>
+                    <td>83</td>
+                    <td>83</td>
+                    <td>100</td>
+                    <td>96</td>
+                    <td>96</td>
+                    <td>85</td>
+                    <td>87</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left">Yoda</td>
+                    <td>80</td>
+                    <td>89</td>
+                    <td>99</td>
+                    <td>89</td>
+                    <td>96</td>
+                    <td>85</td>
+                    <td>96</td>
+                    <td>92</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td style="text-align:left">Admiral Ackbar</td>                         
+                    <td>82</td>
+                    <td>88</td>
+                    <td>95</td>
+                    <td>100</td>
+                    <td>
+                        <input type="score"
+                        placeholder="93" maxlength="3" size="4" style="text-align: center;"
+                        id="admiral-ackbar-a5-score"/>
+                    </td> 
+                    <td>98</td>
+                    <td>85</td>
+                    <td>87</td>
+                    <td>99</td>
+                </tr>
+                </tbody>
+                </table>
+    </tr>
+    </tbody>
+    </table>
+</body>
