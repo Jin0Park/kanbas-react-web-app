@@ -1,0 +1,264 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.kanbas-sidebar {
+  background-color: black;
+  list-style: none;
+  padding: 0px;
+  width: 80px;
+  margin: 10px;
+  column-width: 80px;
+  font-size: 15px;
+  text-align: center;
+  align-content: center;
+}
+
+.kanbas-sidebar li {
+  padding: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.kanbas-sidebar li a {
+  text-decoration: none;
+  color: white;
+}
+
+.kanbas-sidebar li a i {
+  text-decoration: none;
+  color: red;
+}
+
+.kanbas-sidebar li.wd-active a {
+  color: red;
+  text-decoration: none;
+
+}
+.kanbas-sidebar li.wd-active a i {
+  color: red;
+}
+
+.kanbas-sidebar li.wd-active {
+  background-color: white;
+  color: red;
+}
+
+.kanbas-sidebar-account li.wd-inactive {
+  color: gray;
+}
+
+.wd-course-navigation {
+  background-color: white;
+  list-style: none;
+  padding: 0px;
+  width: 190px;
+  font-size: 14px;
+}
+
+.wd-course-navigation a {
+  color: red;
+  text-decoration: none;
+}
+
+.wd-course-navigation li {
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+
+.wd-course-navigation li.wd-active {
+  border-left: 1.5px solid black;
+}
+
+.wd-course-navigation li.wd-active a {
+  color: black;
+}
+
+.wd-selector-5 {
+  color: red;
+  text-decoration: none;
+}
+
+.btn-bd-primary {
+  background-color: #ECECEC;
+  color:black;
+  font-size: 15px;
+  padding: 10px;
+  border: 0;
+  border-radius: 0.1cm;
+  text-decoration: none;
+} 
+
+.btn-bd-secondary {
+  background-color: red;
+  color: white;
+  font-size: 15px;
+  padding: 10px;
+  border: 0;
+  border-radius: 0.1cm;
+  text-decoration: none;
+}
+
+.inner-col {
+  display: inline-block;
+}
+
+.selector-1 {
+  background-color: gray;
+  color:white;
+  font-size: 15px;
+  padding: 10px;
+  border: 0;
+  border-radius: 0.1cm;
+  text-decoration: none;
+  float: right;
+  height: 38px;
+}
+
+.home-subcontent li a {
+  color: black;
+  text-decoration: none;
+}
+
+.home-subcontent-selector {
+  background-color: #E2E3E5;
+  border: 0;
+  text-decoration: none;
+  float: right;
+  height: 25px;
+}
+
+.home-subcontent-button {
+  background-color: #E2E3E5;
+  border: 0;
+  float: right;
+  height: 25;
+}
+
+.home-subcontent-ellipsis {
+  background-color: white;
+  border: 0;
+  float: right;
+  height: 25;
+}
+
+.home-subcontent-checkmark {
+  float: right;
+  color: green;
+  position: relative;
+}
+
+.home-coming-up-lecture-info {
+  color: gray;
+  font-size: 14px;
+}
+
+.home-header-buttons {
+  float: right;
+}
+
+.assignment-title-subtext {
+  color: gray;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.list-group-assignment .list-group-item {
+  background-color: #f1f9fb;
+  border-top: 1px solid #0091b5;
+  border-left-color: #fff;
+  border-right-color: #fff;
+}
+
+.assignment-title-icon {
+  color: green;
+  position: relative;
+  top: 30%
+}
+
+.assignment-header-badge {
+  float: right;
+  height: 20px;
+  text-align: center;
+}
+
+.assignment-subcontent-checkmark {
+  float: right;
+  color: green;
+  position: relative;
+  top: 30%
+}
+
+.assignment-subcontent-ellipsis {
+  background-color: white;
+  border: 0;
+  float: right;
+  height: 25;
+  position: relative;
+  top: 25%
+}
+
+.assignment-title {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.assignment-edit-published {
+  color: green;
+  font-weight: bold;
+  float: right;
+  position: relative;
+  top: 50%;
+  text-decoration: none;
+}
+
+.grades-dropdown {
+  width:600px;
+  border-color: black;
+  text-align: left; 
+  vertical-align: left;
+}
+
+.grades-input {
+  position: relative;
+  left: 25%;
+  text-align: center;
+}
+
+.setting-header-tab {
+  color: red;
+  text-decoration: none;
+}
+
+.setting-image {
+  height:38px;
+  width:150px;
+  position: relative;
+  top: 33%;
+  left: 24%
+}
+
+.setting-dropdown {
+  width:600px;
+  border-color: black;
+  text-align: left; 
+  vertical-align: left;
+}
+
+.setting-subcontent-button {
+  background-color: white;
+  border: 0;
+  float: right;
+  height: 25;
+}
+
+.assignment-border {
+  border-left-color: green;
+  border-left-width: 3px;
+}
