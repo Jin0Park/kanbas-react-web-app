@@ -1,0 +1,132 @@
+.wd-course-navigation {
+    background-color: white;
+    list-style: none;
+    padding: 0px;
+    width: 120px;
+    margin: 0px;
+    margin-left: 20px;
+    border-radius: 0px;
+    border: none;
+  }
+  .wd-course-navigation a {
+    padding-left: 10px;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+  }
+  .wd-course-navigation a.active {
+    border-left: 2px solid black;
+    background-color: white;
+  }
+  .wd-course-navigation a.active {
+    color: black;
+  }
+  
+  .wd-course-navigation a {
+    color: red;
+    text-decoration: none;
+  }
+
+  .wd-course-content {
+    padding-top: 13%;
+  }
+
+  .wd-module-content {
+    padding-top: 30px;
+  }
+
+  .wd-course-name {
+    padding: 20px;
+    color: red;
+  }
+
+  .button {
+    margin-right: 4px;
+    float: right;
+  }
+
+  .black {
+    color: black;
+    text-decoration: none;
+  }
+
+  .flex-wrap-button {
+    display: flex;
+    flex-wrap: wrap;
+    width: 280px;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+  .home_todo_heading {
+    text-decoration: none;
+    color: red;
+    text-size-adjust: 10px;
+    font-size: large;
+  }
+
+  .home_icon {
+    float: right;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+
+  .home_check_icon {
+    color: green;
+  }
+
+  .home_subcontent {
+    margin-left: 10px;
+  }
+
+  .wd-assignment-content {
+    padding-top: 10px;
+    border-left-width: 3px;
+    border-color: green;
+  }
+
+  input[type="text"] {
+    width: 400px;
+    display: inline-block;
+  }
+
+  .red {
+    color: red;
+    text-decoration: none;
+  }
+
+  .green {
+    color: green;
+    text-decoration: none;
+  }
+
+  .wd-assignment-subcontent-subtitle {
+    font-size: small;
+  }
+
+  .wd-assignment-subcontent {
+    vertical-align: center;
+    border-left-color: green;
+    border-left-width: 3px;
+  }
+
+  .wd-grade-dropdown {
+    color: red;
+    display:inline-block;
+  }
+
+  .wd-grade-col {
+    display: inline-block;
+    font-size: large;
+    padding: 5px;
+  }
+
+  .grades_search_dropdown {
+    width: 400px;
+    text-align: left;
+
+  }
