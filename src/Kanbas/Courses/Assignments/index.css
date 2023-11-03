@@ -1,0 +1,10 @@
+.assignment_icon {
+    float: right;
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+
+.new_assignment_textbox {
+  height: 50px;
+  width: 30px;
+}

@@ -6,6 +6,8 @@ import { PiDotsSixVerticalBold } from "react-icons/pi";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import { AiOutlinePlus } from "react-icons/ai";
 import { TfiWrite } from "react-icons/tfi";
+import assignmentReducer from "./assignmentReducer";
+import { addAssignment, deleteAssignment, updateAssignment, setAssignment  } from "./assignmentReducer";
 
 function Assignments() {
   const { courseId } = useParams();
@@ -26,15 +28,15 @@ function Assignments() {
         </Link>
         
         <Link
-          key={"module"}
-          to={`#`}
+          key={"newAssignment"}
+          to={`/Kanbas/Courses/${courseId}/Assignments/${courseAssignments.title}`}
           className="btn btn-danger button"
         >
           {<AiOutlinePlus className="wd-icon me-2" />}{"Assignment"}
         </Link>
         
         <Link
-          key={"publishAll"}
+          key={"newGroup"}
           to={`#`}
           className="btn btn-outline-secondary button"
         >
@@ -68,6 +70,9 @@ function Assignments() {
                 </div>
                 <div className="col-1">
                   <div className="home_icon">
+                  <button onClick={deleteAssignment} className="btn btn-danger">
+                    Delete
+                  </button>
                     {<BsFillCheckCircleFill className="wd-icon home_check_icon me-3" />}
                     {<BsThreeDotsVertical className="wd-icon" />}
                   </div>
