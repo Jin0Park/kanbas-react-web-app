@@ -1,4 +1,5 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
 import { useParams, Routes, Route, Navigate, useLocation } from "react-router-dom";
 //import JsonPre from "../../Labs/a3/JsonPre";
 import db from "../Database";
@@ -13,9 +14,21 @@ import { IoIosArrowForward } from "react-icons/io";
 
 function Courses({courses}) {
   const { courseId } = useParams();
+  const URL = "http://localhost:4000/api/courses";
+  const [course, setCourse] = useState({});
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(
+      `${URL}/${courseId}`
+    );
+    setCourse(response.data);
+  };
+
   const {pathname} = useLocation();
   const [empty, kanbas, courseses, id, screen] = pathname.split("/");
-  const course = courses.find((course) => course._id === courseId);
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   return (
     <div>
       <div className="wd-course-name">
