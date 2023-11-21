@@ -12,9 +12,11 @@ import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
 
+const baseURL = "https://kanbas-node-server-app-jfzp.onrender.com"
+
 function Kanbas() {
   const [courses, setCourses] = useState([]);
-    const URL = "http://localhost:4000/api/courses";
+    const URL = baseURL + "/api/courses";
 
   const addNewCourse = async () => {
     const response = await axios.post(URL, course);
