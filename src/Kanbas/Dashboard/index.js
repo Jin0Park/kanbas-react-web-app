@@ -3,33 +3,7 @@ import { React, useState } from "react";
 import { Link } from "react-router-dom";
 function Dashboard({ courses, course, setCourse, addNewCourse,
   deleteCourse, updateCourse }) {
-  //[courses, setCourses] = useState(db.courses);
-  // [course, setCourse] = useState({
-  //   name: "New Course",      number: "New Number",
-  //   startDate: "2023-09-10", endDate: "2023-12-15",
-  // });
-  // updateCourse = () => {
-  //   setCourses(
-  //     courses.map((c) => {
-  //       if (c._id === course._id) {
-  //         return course;
-  //       } else {
-  //         return c;
-  //       }
-  //     })
-  //   );
-  // };
 
-  // addNewCourse = () => {
-  //   setCourses([...courses,
-  //             { ...course,
-  //               _id: new Date().getTime() }]);
-  // };
-  // deleteCourse = (courseId) => {
-  //   setCourses(courses.filter((course) => course._id !== courseId));
-  // };
-
-  // const courses = db.courses;
   return (
     <div>
       <h1>Dashboard</h1>
