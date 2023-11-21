@@ -13,8 +13,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoIosArrowForward } from "react-icons/io";
 
 function Courses({courses}) {
+  const baseURL = "https://kanbas-node-server-app-jfzp.onrender.com"
+
   const { courseId } = useParams();
-  const URL = "http://localhost:4000/api/courses";
+  const URL = baseURL + "/api/courses";
   const [course, setCourse] = useState({});
   const findCourseById = async (courseId) => {
     const response = await axios.get(

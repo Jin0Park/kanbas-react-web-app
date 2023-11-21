@@ -1,6 +1,7 @@
 import axios from "axios";
-const COURSES_URL = "http://localhost:4000/api/courses";
-const MODULES_URL = "http://localhost:4000/api/modules";
+const baseURL = "https://kanbas-node-server-app-jfzp.onrender.com"
+const COURSES_URL = baseURL + "/api/courses";
+const MODULES_URL = baseURL + "/api/modules";
 
 export const updateModule = async (module) => {
   const response = await axios.
