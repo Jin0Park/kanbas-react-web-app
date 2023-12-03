@@ -4,7 +4,7 @@ const request = axios.create({
 });
 
 // export const BASE_API = process.env.REACT_APP_BASE_API_URL;
-export const BASE_API = "https://kanbas-node-server-app-jfzp.onrender.com/api/modules";
+export const BASE_API = "https://kanbas-node-server-app-jfzp.onrender.com";
 console.log(BASE_API);
 export const USERS_API = `${BASE_API}/api/users`;
 export const signin = async (credentials) => {
