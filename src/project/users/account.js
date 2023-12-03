@@ -40,7 +40,7 @@ function Account() {
 
   return (
     <div className="w-50">
-      <h1>Account</h1>
+      <h1>Account {account}</h1>
       {account && (
         <div className="input-container">
           <input value={account.password}
