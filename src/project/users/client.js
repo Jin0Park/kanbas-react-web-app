@@ -3,7 +3,7 @@ import axios from "axios";
 //   withCredentials: true,
 // });
 
-// export const BASE_API = process.env.REACT_APP_BASE_API_URL;
+//export const BASE_API = process.env.REACT_APP_BASE_API_URL;
 export const BASE_API = "https://kanbas-node-server-app-jfzp.onrender.com";
 console.log(BASE_API);
 export const USERS_API = `${BASE_API}/api/users`;
@@ -14,7 +14,6 @@ export const signin = async (credentials) => {
   return response.data;
 };
 export const account = async () => {
-    console.log("in account");
     axios.defaults.withCredentials = true
     const response = await axios.post(`${USERS_API}/account`);
     console.log(response);
