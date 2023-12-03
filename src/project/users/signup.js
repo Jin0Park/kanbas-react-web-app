@@ -8,10 +8,8 @@ function Signup() {
   const navigate = useNavigate();
   const signup = async () => {
     try {
-    console.log("hello");
     console.log(credentials);
       await client.signup(credentials);
-      console.log("hello");
       navigate("/project/account");
     } catch (err) {
       setError(err.response.data.message);
