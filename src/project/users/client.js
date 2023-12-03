@@ -14,8 +14,8 @@ export const signin = async (credentials) => {
   return response.data;
 };
 export const account = async () => {
-    axios.defaults.withCredentials = true
     console.log("in account");
+    axios.defaults.withCredentials = true
     const response = await axios.post(`${USERS_API}/account`);
     console.log(response);
     return response.data;
