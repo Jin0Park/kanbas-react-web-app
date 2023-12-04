@@ -7,6 +7,8 @@ function Account() {
   const { id } = useParams();
   const [account, setAccount] = useState(null);
   const findUserById = async (id) => {
+    console.log(id);
+    print(id);
     const user = await client.findUserById(id);
     setAccount(user);
   };
@@ -42,6 +44,8 @@ function Account() {
       <h1>Account</h1>
       {account && (
         <div className="input-container">
+          <input value={id}>
+          </input>
           <input value={account.password}
             onChange={(e) => setAccount({ ...account,
               password: e.target.value })}/>
